@@ -1,38 +1,100 @@
+
+
 .App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ccf2f4;
+  color: rgb(110, 105, 105);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 10vh;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+
+.MuiSvgIcon-root {
+  margin: 0;
+}
+
+.navlinks li {
+  color: rgb(110, 105, 105);
+  float: right;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 1rem;
+  list-style: none;
+}
+
+.navlinks li:hover {
+  color: rgb(49, 48, 48);
+  cursor: pointer;
+}
+
+.header {
+  margin: 0.8rem;
+}
+
+.footer {
+	position: fixed; 
+  padding: 5px; 
+  bottom: 0; 
+  width: 100%; 
+            /* Height of the footer*/  
+  height: 40px; 
+  background: grey; 
+}
+
+.footer p {
+	font-size: 1rem;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.component {
+  padding: 1rem 1rem 0 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.component p {
+  color: #557174;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submit-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-form input {
+  height: 6vh;
+  color: #557174;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-form textarea {
+  color: #557174;
 }
+
+.submit-button {
+  max-width: 15vh;
+  max-height: 10vh;
+  background-color: rgb(110, 105, 105) ;
+  color: #ccf2f4;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #ccf2f4;
+  color: #557174;
+  cursor: pointer;
+}
+
